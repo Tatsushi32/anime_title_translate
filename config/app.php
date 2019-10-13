@@ -264,11 +264,11 @@ return [
              * the following line and set the port accordingly
              */
 
-            'username' => 'b6de8c3f720408',
+            'username' => 'bcdb0b72a262c4',
             // 'username' => 'dbuser',
-            'password' => '384598a2',
+            'password' => '9a963ddc',
             // 'password' => 'kaketatsu',
-            'database' => 'heroku_8731f37960bddd6',
+            'database' => 'heroku_c0930cff7d152b3',
             // 'database' => 'anihen',
             // 'port' => '3306',
             // 'unix_socket' => '/var/lib/mysql/mysql.sock',
