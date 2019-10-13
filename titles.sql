@@ -1,18 +1,18 @@
-create table if not exists titles (
-	id int unsigned auto_increment primary key,
-	FormalTitle_jp varchar(255),
-	HiraganaTitle varchar(255),
-	KatakanaTitle varchar(255),
-	ShortTitle varchar(255),
-	FormalTitle_eg varchar(255),
-	CapitalTitle varchar(255),
-	SmallTitle varchar(255),
-    imageurl varchar(2000),
-    quote varchar(255),
-    quoteurl varchar(2000),
-	created datetime default now(),
-	modified datetime default now()
-);
+-- create table if not exists titles (
+-- 	id int unsigned auto_increment primary key,
+-- 	FormalTitle_jp varchar(255),
+-- 	HiraganaTitle varchar(255),
+-- 	KatakanaTitle varchar(255),
+-- 	ShortTitle varchar(255),
+-- 	FormalTitle_eg varchar(255),
+-- 	CapitalTitle varchar(255),
+-- 	SmallTitle varchar(255),
+--     imageurl varchar(2000),
+--     quote varchar(255),
+--     quoteurl varchar(2000),
+-- 	created datetime default now(),
+-- 	modified datetime default now()
+-- );
 
 
 
