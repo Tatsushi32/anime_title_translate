@@ -14,6 +14,10 @@
 -- 	modified datetime default now()
 -- );
 
+-- create table requesttitles (
+-- 	id int unsigned auto_increment primary key,
+-- 	RequestTitle varchar(255)
+-- );
 
 
 insert into titles (FormalTitle_jp, HiraganaTitle, KatakanaTitle, ShortTitle, FormalTitle_eg, CapitalTitle, SmallTitle, imageurl, quote, quoteurl) values 

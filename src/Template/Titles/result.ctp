@@ -41,7 +41,7 @@ $this->assign('title', 'Result');
 		</div>
 
 		<div id='request'>
-			<button class="btn button" id="btn_action2">Request Title</button>
+			<button class="btn button" id="request-button">Request Title</button>
 			<div id="info" title="Request title">
 				<div class="titles form large-9 medium-8 columns content">
 					<?= $this->Form->create($requesttitle, array('url' => array('controller' => 'requesttitles', 'action' => 'requesttitle'))) ?>

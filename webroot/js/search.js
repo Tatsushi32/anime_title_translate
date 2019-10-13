@@ -50,7 +50,7 @@ $(function() {
 	if($('#title').length == 0){
 		$('#noresult').text('No matches found');
 		$('#request').show();
-		$("#btn_action2").click(function() {
+		$("#request-button").click(function() {
 			$("#info").dialog("open");
 			return false;
 		});
