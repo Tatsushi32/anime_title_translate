@@ -45,7 +45,7 @@ p {
 #searchbox,#nextform {
 	width: 30%;
 	position: fixed;
-	top: 75%;
+	top: 33rem;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
@@ -59,7 +59,7 @@ p {
 }
 
 #resultbox {
-	margin-top: 3rem;
+	margin-top: 1rem;
 	max-height: 20.6rem;
 	overflow: scroll;
 	
@@ -147,6 +147,9 @@ footer {
 	#imagebox {
 		top: 20rem;
 	}
+	#searchbox,#nextform {
+		top: 34rem;
+	}
 }
 @media (max-width:768px){
 	.body {
@@ -155,6 +158,7 @@ footer {
 	}
 	#searchbox,#nextform {
 		width: 50%;
+		/* top: 40rem; */
 	}
 	#resultbox {
 		max-height: 21rem;
@@ -179,6 +183,7 @@ footer {
 	}
 	#searchbox,#nextform {
 		width: 19rem;
+		top: 37rem;
 	}
 	#resultbox {
 		max-height: 22rem;
@@ -194,6 +199,9 @@ footer {
 	}
 }
 @media (max-width:375px){
+	#searchbox,#nextform {
+		top: 33rem;
+	}
 	#resultbox {
 		max-height: 19.5rem;
 	}
@@ -203,12 +211,13 @@ footer {
 	}
 	#imagebox {
 		width: 9rem;
-		top: 15rem;
+		top: 14rem;
 	}
 }
 @media (max-width:360px){
 	#searchbox,#nextform {
 		width: 16rem;
+		top: 30rem;
 	}
 	#resultbox {
 		max-height: 18.5rem;
@@ -235,6 +244,9 @@ footer {
 	#imagebox {
 		width: 7rem;
 		top: 13rem;
+	}
+	#searchbox,#nextform {
+		top: 27rem;
 	}
 	.button {
 		width: 5rem;
