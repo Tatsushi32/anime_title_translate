@@ -28,7 +28,7 @@ $cakeDescription='アニメのタイトル翻訳'
     <?= $this->Html->css('base.css') ?>
 
     <?= $this->Html->css([
-		'jquery-ui.theme.min', 'jquery-ui.min', 'bootstrap', 'bootstrap.min',  'styles'
+		'jquery-ui.theme.min', 'jquery-ui.min', 'bootstrap.min',  'styles'
 	]) ?>
 
     <?= $this->fetch('meta') ?>

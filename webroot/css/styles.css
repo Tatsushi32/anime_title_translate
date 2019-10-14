@@ -44,15 +44,6 @@ p {
 	margin-top: 4rem;
 }
 
-#otaku-image {
-	height: 10%;
-	width: 10%;
-	position: fixed;
-	top: 10%;
-	left: 20%;
-	transform: translate(-50%, -50%);
-}
-
 #searchbox,#nextform {
 	width: 30%;
 	position: fixed;
@@ -93,7 +84,7 @@ p {
 #imagebox {
 	width: 10rem;
 	position: fixed;
-	top: 38%;
+	top: 270px;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
@@ -154,6 +145,9 @@ footer {
 @media (max-width:1024px){
 	.body {
 		width: 60%;
+	}
+	#imagebox {
+		top: 20rem;
 	}
 }
 @media (max-width:768px){
@@ -235,6 +229,9 @@ footer {
 	#resultbox {
 		max-height: 18.5rem;
 		}
+	#imagebox {
+		top: 250px;
+	}
 }
 @media (max-width:320px){
 	.body {
@@ -262,6 +259,7 @@ footer {
 	}
 	#imagebox {
 		width: 7rem;
+		top: 220px;
 	}
 	.button {
 		width: 5rem;
