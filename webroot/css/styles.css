@@ -142,7 +142,7 @@ footer {
 
 @media (max-width:1024px){
 	.body {
-		width: 60%;
+		width: 100%;
 	}
 	#imagebox {
 		top: 20rem;
@@ -153,7 +153,6 @@ footer {
 }
 @media (max-width:768px){
 	.body {
-		width: 80%;
 		height: 100%;
 	}
 	#searchbox,#nextform {
@@ -171,7 +170,7 @@ footer {
 }
 @media (max-width:600px){
 	.body {
-		width: 90%;
+		/* width: 90%; */
 	}
 	#resultbox {
 		max-height: 20.5rem;
@@ -183,7 +182,7 @@ footer {
 	}
 	#searchbox,#nextform {
 		width: 19rem;
-		top: 37rem;
+		top: 33rem;
 	}
 	#resultbox {
 		max-height: 22rem;
@@ -200,7 +199,7 @@ footer {
 }
 @media (max-width:375px){
 	#searchbox,#nextform {
-		top: 33rem;
+		top: 30rem;
 	}
 	#resultbox {
 		max-height: 19.5rem;
@@ -255,4 +254,3 @@ footer {
 	}
 
 }
-	
