@@ -48,6 +48,7 @@ p {
 	top: 33rem;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	z-index: 2;
 }
 
 
@@ -137,7 +138,8 @@ footer {
 	width: 100%;
 	text-align: center;
 	position: absolute;
-    bottom: 0;
+	bottom: 0;
+	z-index: 1;
 }
 
 @media (max-width:1024px){
@@ -199,7 +201,7 @@ footer {
 }
 @media (max-width:375px){
 	#searchbox,#nextform {
-		top: 30rem;
+		top: 27rem;
 	}
 	#resultbox {
 		max-height: 19.5rem;
