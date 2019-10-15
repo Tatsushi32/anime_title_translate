@@ -23,12 +23,23 @@ $cakeDescription='アニメのタイトル翻訳'
         <?= $this->fetch('title') ?>｜
         <?= $cakeDescription ?>
     </title>
+    <style>
+        .body{background: url('../img/the-background-352165_1280.png');
+            background-size: cover;
+	        text-align: center;
+	        margin: auto;
+	        display: block;
+            width: 40%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;}
+    </style>
     <?= $this->Html->meta('icon') ?>
 
-    <?= $this->Html->css('base.css') ?>
-
     <?= $this->Html->css([
-		'jquery-ui.theme.min', 'jquery-ui.min', 'bootstrap.min',  'styles'
+		'jquery-ui.theme.min', 'jquery-ui.min', 'bootstrap.min', 'styles', 'base.css'
 	]) ?>
 
     <?= $this->fetch('meta') ?>
