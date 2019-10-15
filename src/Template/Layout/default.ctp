@@ -42,7 +42,6 @@ $cakeDescription='アニメのタイトル翻訳'
     <?= $this->Flash->render() ?>
     <?= $this->fetch('content') ?>
     <footer>
-        <!-- <p>©️ 2019 Anihon</p> -->
     </footer>
 </body>
 </html>
