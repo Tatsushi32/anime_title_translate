@@ -14,13 +14,13 @@ $this->assign('title', 'Result');
 			<h1 id="title">
 				<?php $Anime_Title = $this->request->query('Anime_Title'); ?>
 				<?php if(strlen($Anime_Title)==mb_strlen($Anime_Title,'utf8')): ?>
-					<div><?= h($title->FormalTitle_jp) ?></div>
+					<div><?= nl2br(h($title->FormalTitle_jp)) ?></div>
 					<div id="imagebox">
 						<img id="image" src="<?= h($title->imageurl) ?>" alt="">
 						<p id="quote">出典:<?= $this->Html->link($title->quote, $title->quoteurl, ['target' => '_blank', 'rel' => 'noopener']) ?></p>
 					</div>
 				<?php else: ?>
-					<div><?= h($title->FormalTitle_eg) ?></div>
+					<div><?= nl2br(h($title->FormalTitle_eg)) ?></div>
 					<div id="imagebox">
 						<img id="image" src="<?= h($title->imageurl) ?>" alt="">
 						<p id="quote">出典:<?= $this->Html->link($title->quote, $title->quoteurl, ['target' => '_blank', 'rel' => 'noopener']) ?></p>

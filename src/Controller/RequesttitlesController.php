@@ -11,7 +11,6 @@ class RequesttitlesController extends AppController {
         if ($this->request->is('post')) {
             $requesttitle = $this->Requesttitles->patchEntity($requesttitle, $this->request->data());
             if ($this->Requesttitles->save($requesttitle)) {
-                // $this->Flash->success(__('The title has been sended.'));
 
                 return $this->redirect(['controller' => 'titles', 'action' => 'index']);
             }
