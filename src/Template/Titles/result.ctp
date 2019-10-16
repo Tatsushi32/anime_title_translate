@@ -28,7 +28,7 @@ $this->assign('title', 'Result');
 				<?php endif; ?>
 				<?php endforeach; ?>
 			</h1>
-		<div id="noresult"></div>
+		<h1 id="noresult"></h1>
 	</div>
 
 
