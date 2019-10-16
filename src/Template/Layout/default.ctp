@@ -24,7 +24,7 @@ $cakeDescription='アニメのタイトル翻訳'
         <?= $cakeDescription ?>
     </title>
     <style>
-        .body{background: url('../img/the-background-352165_1280.png');
+        .body{background: url('../img/the-background-352165_1280.jpg');
             background-size: cover;
 	        text-align: center;
 	        margin: auto;
