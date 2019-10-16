@@ -39,7 +39,7 @@ $cakeDescription='アニメのタイトル翻訳'
     <?= $this->Html->meta('icon') ?>
 
     <?= $this->Html->css([
-		'styles','base.css', 'bootstrap.min', 'jquery-ui.theme.min', 'jquery-ui.min'
+		'bootstrap.min', 'jquery-ui.theme.min', 'jquery-ui.min', 'styles', 'base.css', 
 	]) ?>
 
     <?= $this->fetch('meta') ?>
@@ -48,7 +48,7 @@ $cakeDescription='アニメのタイトル翻訳'
 </head>
 <body>
     <?= $this->Html->script([
-		'search', 'jquery-3.4.1.min', 'jquery-ui.min'
+		'jquery-3.4.1.min', 'jquery-ui.min', 'search'
 	]) ?>
     <?= $this->Flash->render() ?>
     <?= $this->fetch('content') ?>
