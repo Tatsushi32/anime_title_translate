@@ -58,7 +58,7 @@ p {
 	
 }
 
-#title {
+.title {
 	font-size: 2rem;
 	margin-top: 1rem;
 	padding-top: 1rem;
@@ -72,7 +72,7 @@ p {
 	padding-bottom: 1rem;
 }
 
-#imagebox {
+.imagebox {
 	width: 10rem;
 	position: fixed;
 	top: 270px;
@@ -141,7 +141,7 @@ p {
 	.body {
 		width: 100%;
 	}
-	#imagebox {
+	.imagebox {
 		top: 20rem;
 	}
 	#searchbox,#nextform {
@@ -185,7 +185,7 @@ p {
 		max-height: 22rem;
 		margin-top: 0;
 	}
-	#imagebox {
+	.imagebox {
 		top: 17rem;
 	}
 }
@@ -205,7 +205,7 @@ p {
 		height: 9rem;
 		width: 9rem;
 	}
-	#imagebox {
+	.imagebox {
 		width: 9rem;
 		top: 15rem;
 	}
@@ -218,12 +218,12 @@ p {
 	#resultbox {
 		max-height: 18.5rem;
 		}
-	#imagebox {
+	.imagebox {
 		top: 16rem;
 	}
 }
 @media (max-width:320px){
-	#title {
+	.title {
 		font-size: 1.5rem;
 	}
 	#anime-title {
@@ -237,7 +237,7 @@ p {
 		width: 7rem;
 		margin-top: 1rem;
 	}
-	#imagebox {
+	.imagebox {
 		width: 7rem;
 		top: 13rem;
 	}

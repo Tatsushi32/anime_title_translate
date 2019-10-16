@@ -10,7 +10,7 @@ $this->assign("title", "Anime Title Translate")
 
 <div class="columns content body">
     <div class=index-title>
-        <h1 id="title">Anime Title Translate</h1>
+        <h1 class="title">Anime Title Translate</h1>
     </div>
     <div id="searchbox">
         <?= $this->Form->create("", ["type"=>"get", "url"=>["action"=>"result"]]) ?>

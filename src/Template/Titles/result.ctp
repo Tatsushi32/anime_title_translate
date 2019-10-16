@@ -11,23 +11,23 @@ $this->assign('title', 'Result');
 <div class="columns content body">
 	<div id="resultbox">
 		<?php foreach ($titles as $title): ?>
-			<h1 id="title">
+			<h1 class="title">
 				<?php $Anime_Title = $this->request->query('Anime_Title'); ?>
 				<?php if(strlen($Anime_Title)==mb_strlen($Anime_Title,'utf8')): ?>
 					<div><?= nl2br(h($title->FormalTitle_jp)) ?></div>
-					<div id="imagebox">
+					<div class="imagebox">
 						<img id="image" src="<?= h($title->imageurl) ?>" alt="">
 						<p id="quote">出典:<?= $this->Html->link($title->quote, $title->quoteurl, ['target' => '_blank', 'rel' => 'noopener']) ?></p>
 					</div>
 				<?php else: ?>
 					<div><?= nl2br(h($title->FormalTitle_eg)) ?></div>
-					<div id="imagebox">
+					<div class="imagebox">
 						<img id="image" src="<?= h($title->imageurl) ?>" alt="">
 						<p id="quote">出典:<?= $this->Html->link($title->quote, $title->quoteurl, ['target' => '_blank', 'rel' => 'noopener']) ?></p>
 					</div>
 				<?php endif; ?>
-				<?php endforeach; ?>
 			</h1>
+		<?php endforeach; ?>
 		<h1 id="noresult"></h1>
 	</div>
 

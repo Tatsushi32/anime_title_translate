@@ -47,7 +47,7 @@ $('#anime-title').focus(function() {
 
 $('#request').hide();
 $(function() {
-	if($('#title').length == 0){
+	if($('.title').length == 0){
 		$('#noresult').text('No matches found');
 		$('#request').show();
 		$("#request-button").click(function() {
@@ -55,11 +55,12 @@ $(function() {
 			return false;
 		});
 
-		$("#info").dialog({
+		$('#info').dialog({
 			autoOpen: false,
 			modal: true,
-		});
+		}); 
+	} 
+	else if ($('.title').length > 1) {
+		$('.imagebox').hide();
 	}
-
 });
-
