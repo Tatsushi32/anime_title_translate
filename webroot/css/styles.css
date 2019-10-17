@@ -7,13 +7,10 @@ body {
     position: absolute;
     margin-top: 0;
     margin: auto;
-    margin: auto;
-    margin: auto;
-    font-size: 16px;
 	font-family: Verdana, sans-serif;
 	width: 100%;
 	height: 100%;
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 
 h1 {
@@ -24,10 +21,6 @@ h1 {
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;
 	line-height: 1.2;
-}
-
-p {
-	margin-bottom: 0.5rem;
 }
 
 .index-title {
@@ -166,9 +159,6 @@ p {
 	}
 }
 @media (max-width:600px){
-	.body {
-		/* width: 90%; */
-	}
 	#resultbox {
 		max-height: 20.5rem;
 	}

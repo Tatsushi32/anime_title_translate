@@ -72,13 +72,13 @@ class TitlesController extends AppController {
         if(!empty($Anime_Title)) {
             $this->paginate = [
                 'conditions'=>array('or' => array(
-                    'FormalTitle_jp LIKE'=>$Anime_Title.'%', 
-                    'HiraganaTitle LIKE'=>$Anime_Title.'%',
-                    'KatakanaTitle LIKE'=>$Anime_Title.'%',
-                    'ShortTitle LIKE'=>$Anime_Title.'%',
-                    'FormalTitle_eg LIKE'=>$Anime_Title.'%',
-                    'CapitalTitle LIKE'=>$Anime_Title.'%',
-                    'SmallTitle LIKE'=>$Anime_Title.'%',
+                    'FormalTitle_jp LIKE'=>'%'.$Anime_Title.'%', 
+                    'HiraganaTitle LIKE'=>'%'.$Anime_Title.'%',
+                    'KatakanaTitle LIKE'=>'%'.$Anime_Title.'%',
+                    'ShortTitle LIKE'=>'%'.$Anime_Title.'%',
+                    'FormalTitle_eg LIKE'=>'%'.$Anime_Title.'%',
+                    'CapitalTitle LIKE'=>'%'.$Anime_Title.'%',
+                    'SmallTitle LIKE'=>'%'.$Anime_Title.'%',
                 )),
             ];
         }

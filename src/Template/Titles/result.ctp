@@ -10,6 +10,14 @@ $this->assign('title', 'Result');
 
 <div class="columns content body">
 	<div id="resultbox">
+		<?php if(count($titles) > 1):?>
+			<style>
+				.imagebox {
+					display: none;
+				}
+			</style>
+		<?php endif; ?>
+
 		<?php foreach ($titles as $title): ?>
 			<h1 class="title">
 				<?php $Anime_Title = $this->request->query('Anime_Title'); ?>

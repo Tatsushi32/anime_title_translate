@@ -60,7 +60,4 @@ $(function() {
 			modal: true,
 		}); 
 	} 
-	else if ($('.title').length > 1) {
-		$('.imagebox').hide();
-	}
 });
