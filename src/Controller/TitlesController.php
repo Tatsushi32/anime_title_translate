@@ -20,35 +20,25 @@ class TitlesController extends AppController {
     public function index()
     {
         // $this->viewBuilder()->layout('app');
-        $Anime_Title = $this->request->getQuery('Anime_Title');
+        // $Anime_Title = $this->request->getQuery('Anime_Title');
 
-        if(!empty($Anime_Title)) {
-            $this->paginate = [
-                'conditions'=>array('or' => array(
-                    'FormalTitle_jp LIKE'=>$Anime_Title.'%', 
-                    'HiraganaTitle LIKE'=>$Anime_Title.'%',
-                    'KatakanaTitle LIKE'=>$Anime_Title.'%',
-                    'ShortTitle LIKE'=>$Anime_Title.'%',
-                    'FormalTitle_eg LIKE'=>$Anime_Title.'%',
-                    'CapitalTitle LIKE'=>$Anime_Title.'%',
-                    'SmallTitle LIKE'=>$Anime_Title.'%',
-                )),
-            ];
-        }
-        $titles = $this->paginate($this->Titles);
-        $this->set(compact('titles'));
+        // if(!empty($Anime_Title)) {
+        //     $this->paginate = [
+        //         'conditions'=>array('or' => array(
+        //             'FormalTitle_jp LIKE'=>$Anime_Title.'%', 
+        //             'HiraganaTitle LIKE'=>$Anime_Title.'%',
+        //             'KatakanaTitle LIKE'=>$Anime_Title.'%',
+        //             'ShortTitle LIKE'=>$Anime_Title.'%',
+        //             'FormalTitle_eg LIKE'=>$Anime_Title.'%',
+        //             'CapitalTitle LIKE'=>$Anime_Title.'%',
+        //             'SmallTitle LIKE'=>$Anime_Title.'%',
+        //         )),
+        //     ];
+        // }
+        // $titles = $this->paginate($this->Titles);
+        // $this->set(compact('titles'));
         
     }
-
-    public function view($id = null)
-    {
-        $title = $this->Titles->get($id, [
-            'contain' => ['Comments']
-        ]);
-
-        $this->set('title', $title);
-    }
-
 
     public function getTitles() {
         $title = $this->request->getParam('title');
@@ -66,19 +56,18 @@ class TitlesController extends AppController {
     }
 
     public function result() {
-
         $Anime_Title = $this->request->query('Anime_Title');
 
         if(!empty($Anime_Title)) {
             $this->paginate = [
                 'conditions'=>array('or' => array(
-                    'FormalTitle_jp LIKE'=>'%'.$Anime_Title.'%', 
-                    'HiraganaTitle LIKE'=>'%'.$Anime_Title.'%',
-                    'KatakanaTitle LIKE'=>'%'.$Anime_Title.'%',
-                    'ShortTitle LIKE'=>'%'.$Anime_Title.'%',
-                    'FormalTitle_eg LIKE'=>'%'.$Anime_Title.'%',
-                    'CapitalTitle LIKE'=>'%'.$Anime_Title.'%',
-                    'SmallTitle LIKE'=>'%'.$Anime_Title.'%',
+                    'FormalTitle_jp LIKE'=>$Anime_Title.'%', 
+                    'HiraganaTitle LIKE'=>$Anime_Title.'%',
+                    'KatakanaTitle LIKE'=>$Anime_Title.'%',
+                    'ShortTitle LIKE'=>$Anime_Title.'%',
+                    'FormalTitle_eg LIKE'=>$Anime_Title.'%',
+                    'CapitalTitle LIKE'=>$Anime_Title.'%',
+                    'SmallTitle LIKE'=>$Anime_Title.'%',
                 )),
             ];
         }
