@@ -11,6 +11,9 @@ $this->assign('title', 'Result');
 <div class="columns content body">
 	<div id="resultbox">
 		<?php if(count($titles) > 1):?>
+			<div id='maybebox'>
+				<h1 id='maybe'>Maybe...</h1>
+			<div>
 			<style>
 				.imagebox {
 					display: none;

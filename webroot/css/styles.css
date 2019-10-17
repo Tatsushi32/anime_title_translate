@@ -23,6 +23,12 @@ h1 {
 	line-height: 1.2;
 }
 
+#maybe {
+	display: inline-block;
+	border-bottom: double 5px black;
+	/* text-decoration: underline double black; */
+}
+
 .index-title {
 	margin-top: 4rem;
 }
