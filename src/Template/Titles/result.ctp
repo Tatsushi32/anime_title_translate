@@ -5,7 +5,7 @@
  */
 ?>
 <?php
-$this->assign('title', 'Result');
+// $this->assign('title', 'Result');
 ?>
 
 <div class="columns content body">
@@ -25,12 +25,14 @@ $this->assign('title', 'Result');
 			<h1 class="title">
 				<?php $Anime_Title = $this->request->query('Anime_Title'); ?>
 				<?php if(strlen($Anime_Title)==mb_strlen($Anime_Title,'utf8')): ?>
+					<?php $this->assign('title', 'Result:'.$title->FormalTitle_jp); ?>
 					<div><?= nl2br(h($title->FormalTitle_jp)) ?></div>
 					<div class="imagebox">
 						<img id="image" src="<?= h($title->imageurl) ?>" alt="">
 						<p id="quote">出典:<?= $this->Html->link($title->quote, $title->quoteurl, ['target' => '_blank', 'rel' => 'noopener']) ?></p>
 					</div>
 				<?php else: ?>
+				<?php $this->assign('title', 'Result:'.$title->FormalTitle_eg); ?>
 					<div><?= nl2br(h($title->FormalTitle_eg)) ?></div>
 					<div class="imagebox">
 						<img id="image" src="<?= h($title->imageurl) ?>" alt="">
